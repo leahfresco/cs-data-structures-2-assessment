@@ -1,0 +1,43 @@
+Recursion
+
+1. In your own words, what is recursion?
+    A: Recursion is when a function calls itself.
+2. Why is it necessary to have a base case?
+    A: A base case breaks out of the recursive loop. Without it, the function would run forever.
+
+Graphs
+
+1. What is a graph?
+    A: Graphs are groups of nodes that are connected in some way.
+2. How is a graph different from a tree?
+    A: Graphs can have cycles/loops while trees cannot.
+3. Give an example of something that would be good to model with a graph.
+    A: A subway map.
+
+Performance of Data Structures
+
+Data Structure              Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)          O(1)    O(n)    O(1)    O(n)    O(n)    O(1)           
+Linked List                  O(n)    O(n)    O(1)    O(1)    O(1)    O(n)
+Doubly-Linked List           O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)              X        X     O(1)      X     O(n)      X     
+Queue (as LL or DLL)          X        X     O(1)      X     O(1)      X
+Stack (as Array, LL, or DLL)  X        X     O(1)      X       X      O(1)
+Deque (as DLL)                X        X     O(1)    O(1)     O(1)    O(1)          
+
+
+
+Data Structure          Get       Add       Delete    Iterate  Memory
+Dictionary (Hash Map)   O(1)      O(1)       O(1)      O(n)    medium
+Set (Hash Map)          O(1)      O(1)       O(1)      O(n)    medium          
+Binary Search Tree      O(log n)  O(log n)   O(log n)  O(n)     low            
+Tree                    O(n)      O(1)       O(1)      O(n)     low
+
+Sorting
+
+1. Describe in words how the Bubble Sort algorithm works.
+    A: Bubble sort goes through the list and bubbles up the largest number until the list is sorted. It uses two nested loops which means that it works in quadratic time.
+2. Describe in words how the Merge Sort algorithm works.
+    A: Merge sort recursively breaks up a list in half until each number is on its own and then merges the list in a sorted way using the idea that merging sorted lists can be done in constant time. The recursive portion works in log n time so the algorithm as a whole works in O(n log n) time.
+3. Describe in words how the Quick Sort algorithm works. 
+    A: It first breaks down a list into two half with a partition that is one of the elements of the list, it then recursively breaks down the list in half until the list is broken into individual elements and the list is fully sorted.
